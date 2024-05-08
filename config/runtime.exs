@@ -94,6 +94,8 @@ if config_env() != :test do
     Realtime.Repo.Replica.NorthVirginia => System.get_env("DB_HOST_REPLICA_IAD", default_db_host),
     Realtime.Repo.Replica.Oregon => System.get_env("DB_HOST_REPLICA_SJC", default_db_host),
     Realtime.Repo.Replica.SanJose => System.get_env("DB_HOST_REPLICA_SJC", default_db_host),
+    Realtime.Repo.Replica.USGovEast => System.get_env("DB_HOST_REPLICA_USGOVE", default_db_host),
+    Realtime.Repo.Replica.USGovWest => System.get_env("DB_HOST_REPLICA_USGOVW", default_db_host),
     Realtime.Repo.Replica.Local => default_db_host
   }
 
