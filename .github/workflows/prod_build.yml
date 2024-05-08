@@ -44,12 +44,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           platforms: linux/${{ env.arch }}
           no-cache: true
-
-  update-branch-name:
-    needs: [docker_arm_release]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v2
-        with:
-          ref: refs/heads/main
