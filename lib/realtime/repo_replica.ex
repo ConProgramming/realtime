@@ -22,7 +22,9 @@ defmodule Realtime.Repo.Replica do
     "eu-west-2" => Realtime.Repo.Replica.London,
     "us-east-1" => Realtime.Repo.Replica.NorthVirginia,
     "us-west-2" => Realtime.Repo.Replica.Oregon,
-    "us-west-1" => Realtime.Repo.Replica.SanJose
+    "us-west-1" => Realtime.Repo.Replica.SanJose,
+    "us-gov-east-1" => Realtime.Repo.Replica.USGovEast,
+    "us-gov-west-1" => Realtime.Repo.Replica.USGovWest,
   }
 
   @ast (quote do
