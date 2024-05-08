@@ -6,7 +6,6 @@ on:
 jobs:      
   docker_arm_release:
     runs-on: arm-runner
-    if: needs.release.outputs.published == 'true'
     timeout-minutes: 120
     env:
       arch: arm64
