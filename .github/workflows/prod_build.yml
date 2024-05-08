@@ -19,7 +19,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            supabase/realtime
+            conprogramming/realtime
           tags: |
             type=raw,value=v1_arm64
             type=raw,value=latest_arm64
