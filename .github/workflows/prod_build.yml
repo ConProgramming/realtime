@@ -21,8 +21,8 @@ jobs:
           images: |
             supabase/realtime
           tags: |
-            type=raw,value=v${{ needs.release.outputs.version }}_${{ env.arch }}
-            type=raw,value=latest_${{ env.arch }}
+            type=raw,value=v1_arm64
+            type=raw,value=latest_arm64
 
       - uses: docker/login-action@v2
         with:
@@ -42,5 +42,5 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          platforms: linux/${{ env.arch }}
+          platforms: linux/arm64
           no-cache: true
