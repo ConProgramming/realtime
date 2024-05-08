@@ -52,6 +52,8 @@ defmodule Realtime.Nodes do
       "eu-west-2" -> "eu-west-2"
       "eu-west-3" -> "eu-west-2"
       "eu-central-1" -> "eu-west-2"
+      "us-gov-east-1" -> "us-gov-east-1"
+      "us-gov-west-1" -> "us-gov-west-1"
       _ -> nil
     end
   end
